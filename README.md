@@ -58,7 +58,7 @@ Follow the below steps carefully to set up the UMS locally on your device.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/AmzBG/UMS.git
+   git clone https://github.com/AmzBG/UMS_backend.git
    ```
 2. Open project in vscode
 
