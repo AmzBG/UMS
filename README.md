@@ -54,32 +54,42 @@ The University Management System (UMS) is a web-based application that provides 
 
 Follow the below steps carefully to set up the UMS locally on your device.
 
-### Prerequisites
-
-Make sure you have the following installed:
-
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/AmzBG/CSIS228_Project.git
+   git clone https://github.com/AmzBG/UMS.git
    ```
 2. Open project in vscode
 
    Double click <b>Open_project.bat</b>
    
+3. Create a `.env` file in the root directory and add the following fields:
+   ```plaintext
+   # App
+   PORT = <your_port>
+
+   # Database credentials
+   DB_HOST = <your_database_host>
+   DB_USER = <your_database_user>
+   DB_PASS = <your_database_password>
+   DB_NAME = <your_database_name>
+   DB_PORT = <your_database_port>
+
+   # Admin info
+   ADMIN_USERNAME = <your_admin_username>
+   ADMIN_PASSWORD = <your_admin_password>
+
+   # Jwt key
+   JWT_SECRET_KEY = <your_jwt_secret_key>
+   ```
+
 4. Install NPM packages
    ```sh
    npm install
    ```
 5. Run the server
-   ```js
+   ```sh
    npm run dev;
    ```
    
